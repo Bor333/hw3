@@ -29,7 +29,17 @@
     },
   ];
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  const productsOut = ((element) => {
+    console.log(`В массиве c id ${element.price.id} price = ${element.price}`)
+  });
+
+  products.forEach(productsOut);
+  console.log('\n Для каждого элемента поле price увеличено на 15%: \n');
+  products.forEach((element) => {
+    element.price = Math.round(element.price * 1.15);
+  });
+
+  products.forEach(productsOut);
 </script>
 </body>
 </html>
