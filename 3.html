@@ -35,6 +35,7 @@
 
   products.forEach(productsOut);
   console.log('\n Для каждого элемента поле price увеличено на 15%: \n');
+  //Подскажите, почему второй \n не сработал?
   products.forEach((element) => {
     element.price = Math.round(element.price * 1.15);
   });
