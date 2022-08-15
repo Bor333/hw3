@@ -43,8 +43,17 @@
       price: 78,
     },
   ];
+  console.log(products)
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  const productsWithPhoto = products.filter(product =>
+          "photos" in product && product.photos.length !== 0);
+
+  console.log(productsWithPhoto);
+
+  products.sort(function(a, b) {
+    return a.price - b.price;
+  });
+  console.log(products);
 </script>
 </body>
 </html>
